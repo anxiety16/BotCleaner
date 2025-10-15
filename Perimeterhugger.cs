@@ -177,7 +177,7 @@ namespace RobotCleaner
             IStrategy strategy = new PerimeterHuggerStrategy();
 
             Map map = new Map(20, 10);
-            // map.Display( 10,10);
+            
 
             map.AddDirt(5, 3);
             map.AddDirt(10, 8);
@@ -192,4 +192,5 @@ namespace RobotCleaner
         }
     }
 }
+
 
