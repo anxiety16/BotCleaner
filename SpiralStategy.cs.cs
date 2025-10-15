@@ -217,21 +217,21 @@ namespace RobotCleaner
             //IStrategy strategy = new PerimeterHuggerStrategy();
             IStrategy strategy = new SpiralStrategy();
 
-            Map map = new Map(10, 10); 
+            Map map = new Map(20, 10); 
 
 
             int middleMapPosX = map.Width / 2;
             int middleMapPosY = map.Height / 2;
 
             map.AddDirt(5, 3);
-            map.AddDirt(9, 8);
+            map.AddDirt(10, 8);
             map.AddDirt(1, 1);
             map.AddObstacle(2, 5);
-            map.AddObstacle(9, 1);
+            map.AddObstacle(12, 1);
 
 
             Robot robot = new Robot(map, strategy);
-            robot.Move(middleMapPosX, middleMapPosY);
+            robot.Move(middleMapPosX, middleMapPosY);// the position of robot start in middlemap
 
 
             robot.StartCleaning();
@@ -239,4 +239,5 @@ namespace RobotCleaner
         }
     }
 }
+
 
