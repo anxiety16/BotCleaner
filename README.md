@@ -1,2 +1,0 @@
-# BotCleaner
-school activity
